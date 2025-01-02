@@ -1,9 +1,9 @@
 # Valheim Network Buffoonery
 
-* Increased "Objects Per Sector Per Update Limit" from 400 -> 1000
-  * `GetAllZDOsWithPrefabIterative 400 => 1000`
-* Increased internal buffer limit from 10kb to 100kb
-  * `SendZDOs 10240 => 102400`
+* Increased "Objects Per Sector Per Update Limit" from 400 -> 800
+  * `GetAllZDOsWithPrefabIterative 400 => 800`
+* Increased internal buffer limit from 10kb to 40kb
+  * `SendZDOs 10240 => 40960`
 * Decreased internal network send limit from 20hz (50ms) to 50hz (20ms)
   * `SendZDOToPeers2 0.05 => 0.02`
 
@@ -35,15 +35,15 @@ gpg --keyserver keyserver.ubuntu.com --recv-keys 0xAD96E0200673E2B6D24A7D25C37E4
 Hash: SHA512
 
 9ffd833b46dd19ab2f9b4dda7d26e6c4ac2b2972ccc3bd941b96d2e7d001398b *client/assembly_valheim.dll
-9497b33ed0ba7e68e759f365dadbb45b37d3a8b44927c9f22a45a753341858f9 *client/assembly_valheim_clientmod.dll
+b411e8ab16b45f2fe7724eb6fef317e1e64a881da29781fd5cd2c2ccdcd0aebf *client/assembly_valheim_clientmod.dll
 d3d014c202f6efb9ff86bb293c09ff4afec48ebef53508b66fcf802c20d90207 *server/assembly_valheim.dll
 bc8219f4b0797a324ddae423999e0994f122ef28930d3253d40c930df022c580 *server/assembly_valheim_servermod.dll
 -----BEGIN PGP SIGNATURE-----
 
-iHUEARYKAB0WIQStluAgBnPittJKfSXDfkBD32gQ8QUCZ0U07QAKCRDDfkBD32gQ
-8X5sAQCXBzIIjrHVu30GqRyrD9vOuz5lisy2UmVAJvJYCIf6PgD+PE5Hhdlz5WLi
-OgXjv4Ju1cmVciRxSIB2CeGNQPn85gM=
-=aMFt
+iHUEARYKAB0WIQStluAgBnPittJKfSXDfkBD32gQ8QUCZ3X+2wAKCRDDfkBD32gQ
+8dPEAP4tyj4kGLr4ls+QgSe7VpcS0KydwTxX3dPBowEHxXa9gwD/SMPTPPTg1Yns
+Y3NbFMEWSrNTEvhjx9aPMFfXuGEi+Qc=
+=11Kw
 -----END PGP SIGNATURE-----
 EOF
 ```
